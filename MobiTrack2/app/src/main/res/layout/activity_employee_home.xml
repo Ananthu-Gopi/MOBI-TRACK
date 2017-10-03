@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_employee_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lanciar.app.mobitrack.EmployeeHome"
+    android:background="@drawable/news"
+    >
+
+    <TextView
+        android:text="Employee Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:text="PUNCH IN"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:layout_marginTop="99dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+    <Button
+        android:text="MY TASKS"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/task"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="SIGN OUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signout"
+        android:layout_alignBaseline="@+id/attnd"
+        android:layout_alignBottom="@+id/attnd"
+        android:layout_alignLeft="@+id/task"
+        android:layout_alignStart="@+id/task"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="MY ATTENDANCE"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/attnd"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/button3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3" />
+
+</RelativeLayout>

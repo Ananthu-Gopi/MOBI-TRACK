@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lanciar.app.mobitrack">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.lanciar.app.mobitrack.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.lanciar.app.mobitrack.MapsActivity" />
+        <activity android:name="com.lanciar.app.mobitrack.ManagerHome" />
+        <activity android:name="com.lanciar.app.mobitrack.EmployeeHome" />
+        <activity android:name="com.lanciar.app.mobitrack.AssignTasks" />
+        <activity android:name="com.lanciar.app.mobitrack.MyAttendance" />
+        <activity android:name="com.lanciar.app.mobitrack.my_task" />
+        <activity android:name="com.lanciar.app.mobitrack.spinnertest" />
+        <activity android:name="com.lanciar.app.mobitrack.task_activity" />
+        <activity android:name="com.lanciar.app.mobitrack.report" />
+        <activity android:name="com.lanciar.app.mobitrack.visit_reports" />
+        <activity android:name="com.lanciar.app.mobitrack.visitreport_desc" />
+        <activity android:name="com.lanciar.app.mobitrack.EmpAttendance" />
+        <activity android:name="com.lanciar.app.mobitrack.location_activity"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBsRGoLb_i8mVugp92Hjvq1h3Kj7cv8_rs" />
+
+        <service
+            android:name="com.lanciar.app.mobitrack.locations"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.lanciar.app.mobitrack.TrackActivity">
+
+        </activity>
+    </application>
+
+</manifest>
